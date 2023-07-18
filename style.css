@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@300&display=swap");
+
+/* ===================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 0.2px solid #a5a1a1;
+}
+
+/* ===================================== */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 13vh;
+}
+
+header section {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 8vw;
+}
+
+header section p {
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 31px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 10vw;
+}
+
+header nav a img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+header nav a img:hover {
+  transform: scale(1.2);
+}
+
+/* ===================================== */
+
+.background {
+  background-image: url(assets/offer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+/* ===================================== */
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0px 30px 0px 30px;
+}
+
+.promo {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  size: 20px;
+}
+
+.produtos {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  size: 18px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content figure {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px;
+}
+
+.content img {
+  width: 250px;
+}
+
+.content div{
+  transition: transform .3s ease;
+  cursor: pointer;
+}
+
+.content div:hover{
+  transform: scale(1.1);
+}
+
+.lorem {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.preco {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #5ca720;
+}
+
+/* ===================================== */
+
+footer {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 20vh;
+  padding: 20px;
+  margin: 0px 30px 0px 30px;
+  width: 90vw;
+}
+
+.about nav ul li {
+  list-style: none;
+}
+
+.about nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+footer div p {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  margin-bottom: 10px;
+}
+
+footer div input {
+  height: 35px;
+  width: 300px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 1px;
+}
+
+footer div input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+
+  color: #a8a4a4;
+}
+
+footer div button {
+  background-color: #5ca720;
+  height: 35px;
+  width: 100px;
+  border: none;
+  border-radius: 1px;
+  outline: none;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer div button a {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+footer div button:hover {
+  background-color: #a5a1a1;
+  transform: scale(1.2);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 150px 0px 50px;
+  height: 15vh;
+}
+
+.redes {
+  display: flex;
+  width: 8vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redes img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.redes img:hover {
+  transform: scale(1.2);
+}
+
+.cards {
+  display: flex;
+  width: 13vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards img {
+  width: 25px;
+}
+
+/* ===================================== */
+
+@media (max-width: 700px) {
+  header section {
+    width: 28vw;
+  }
+
+  header nav {
+    justify-content: space-between;
+    width: 28vw;
+  }
+
+  /*  */
+
+  .background {
+    height: 28vh;
+    background-image: url(assets/offer-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*  */
+
+  .content{
+    padding: 10px;
+  }
+
+  .content figure{
+    justify-content: space-around;
+    width: 100vw;
+    
+  }
+
+  .content img{
+    width: 100px;
+  }
+
+  .content div{
+    transition: transform .3s ease;
+  }
+
+  .content div:hover{
+    transform: scale(1.1);
+  }
+
+  .lorem {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .preco {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #5ca720;
+  }
+
+  /*  */
+
+  .about{
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  .about nav{
+    display: flex;
+    width: 100vw;
+  }
+
+  .about nav ul li{
+    margin-bottom: 5px;
+  }
+
+  .about nav ul li a {
+    font-size: 14px;
+  }
+  
+  footer div{
+    margin-top: 10px;
+  }
+
+  footer div p {
+    font-size: 14px;
+  }
+
+  footer div button a {
+    font-size: 16px;
+  }
+
+  footer div input::placeholder {
+    font-size: 13px;
+  }
+
+  .email button{
+    margin-top: 5px;
+    width: 300px;
+  }
+
+  /*  */
+
+  footer .icons{
+    width: 80vw;
+  }
+
+  footer .redes{
+    width: 30vw;
+  }
+
+  footer .cards{
+    width: 45vw;
+  }
+
+  footer .cards img{
+    width: 25px;
+  }
+}
+
